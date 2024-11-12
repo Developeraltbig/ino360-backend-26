@@ -17,7 +17,7 @@ require("dotenv").config();
 const app = express();
 // const PORT = process.env.PORT || 5000;
 
-mongoose.connect('mongodb://localhost:27017/inno_360')
+mongoose.connect('mongodb+srv://nehajaiswal:neha123@nehadb.pcorgpc.mongodb.net/ino360')
   .then(()=>console.log('MongoDB Connected Successfully'))
   .catch(() => console.log('MongoDB Connection error:'))
 
