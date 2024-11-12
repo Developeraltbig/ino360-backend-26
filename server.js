@@ -17,7 +17,7 @@ require("dotenv").config();
 const app = express();
 // const PORT = process.env.PORT || 5000;
 
-mongoose.connect('mongodb://127.0.0.1:27017/inno_360')
+mongoose.connect('mongodb://localhost:27017/inno_360')
   .then(()=>console.log('MongoDB Connected Successfully'))
   .catch(() => console.log('MongoDB Connection error:',err))
 
@@ -163,7 +163,7 @@ app.post("/chat", async (req, res) => {
 
 
 app.listen(5000, () => {
-  console.log("Server listening on http://127.0.0.1:5000");
+  console.log("Server listening on http://localhost:5000");
 });
 // app.listen(PORT, () => {
 //   console.log(`Server is running on port ${PORT}`);
