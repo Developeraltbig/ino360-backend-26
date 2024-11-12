@@ -19,7 +19,7 @@ const app = express();
 
 mongoose.connect('mongodb://localhost:27017/inno_360')
   .then(()=>console.log('MongoDB Connected Successfully'))
-  .catch(() => console.log('MongoDB Connection error:',err))
+  .catch(() => console.log('MongoDB Connection error:'))
 
 
 
