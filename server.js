@@ -28,12 +28,7 @@ mongoose.connect('mongodb+srv://nehajaiswal:neha123@nehadb.pcorgpc.mongodb.net/i
   })
 
 
-// app.use(cors());
-app.use(cors({
-    origin: 'https://ino360-frontend-26.vercel.app', // Replace with your frontend URL
-    methods: ["GET", "POST", "PUT", "DELETE"], // Specify the methods you want to allow
-    allowedHeaders: ["Content-Type", "Authorization"], // Specify the headers you want to allow
-}));
+app.use(cors());
 app.use(express.json());
 
 const storage = multer.memoryStorage();
